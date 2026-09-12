@@ -40,7 +40,7 @@ jobs:
             # Keep the full matrix out of an environment variable. A single
             # Linux environment entry is limited to 128 KiB, and the variant
             # JSON can exceed that as boards are added.
-            echo 'variants=[{"name":"bread-compact-wifi-s3cam"}]' >> "$GITHUB_OUTPUT"
+           echo 'variants=[{"board":"bread-compact-wifi-s3cam","name":"bread-compact-wifi-s3cam","full_name":"bread-compact-wifi-s3cam"}]' >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
